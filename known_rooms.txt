@@ -25,6 +25,7 @@
 2/ 223 - Single, balcony - Wilhelmstraße - 27.28 - 520.50
 2/ 227 - Single, balcony, barrier-free - Wilhelmstraße - 31.13 - 520.50
 2/ 236 - Single, no balcony - Wilhelmstraße - 22.2 - 500.50
+2/ 238 - Single, no balcony - Wilhelmstraße - 20.36 - 475.50
 2/ 242 - Single, balcony - Inner courtyard - 25.06 - 500.50
 2/ 243 - Single, balcony - Inner courtyard - 25.06 - 500.50
 3/ 301 - Single, balcony - Inner courtyard - 27.36 - 520.50

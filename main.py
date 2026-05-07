@@ -6,9 +6,9 @@ import os
 # --- SETTINGS ---
 # In GitHub Actions, these will be pulled from Secrets. 
 # For local testing, you can temporarily hardcode your credentials here.
-SENDER_EMAIL = os.environ.get("SENDER_EMAIL", "your_email@gmail.com") 
-SENDER_PASSWORD = os.environ.get("SENDER_PASSWORD", "your_app_password") 
-RECEIVER_EMAIL = os.environ.get("RECEIVER_EMAIL", "receiver_email@gmail.com")
+SENDER_EMAIL = os.environ.get("SENDER_EMAIL") 
+SENDER_PASSWORD = os.environ.get("SENDER_PASSWORD") 
+RECEIVER_EMAIL = os.environ.get("RECEIVER_EMAIL")
 URL = "https://www.apartments-hn.de/en/book-apartment"
 STATE_FILE = "known_rooms.txt"
 

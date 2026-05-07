@@ -73,7 +73,7 @@ def check_apartments():
             sorted_rooms = sorted(new_rooms)
             print(f"\nNEW AVAILABLE APARTMENTS FOUND:\n{sorted_rooms}")
             # Call the email function to send alerts
-            # send_email(new_rooms)  # <-- UNCOMMENT THIS LINE to activate email sending!
+            send_email(sorted_rooms)  # <-- UNCOMMENT THIS LINE to activate email sending!
             save_known_rooms(current_available_rooms)
         else:
             print("\nNo new available apartments. Current state preserved.")

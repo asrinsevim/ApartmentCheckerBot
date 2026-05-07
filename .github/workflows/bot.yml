@@ -2,41 +2,41 @@ name: Apartment Checker Bot
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # Her 6 saatte bir çalıştırır
-  workflow_dispatch:       # İstediğiniz zaman manuel çalıştırma butonu ekler
+    - cron: '0 */6 * * *'  # Runs every 6 hours
+  workflow_dispatch:       # Adds a button to run the workflow manually from the Actions tab
 
 jobs:
   run-bot:
     runs-on: ubuntu-latest
     permissions:
-      contents: write      # known_rooms.txt dosyasını repoya geri kaydedebilmesi için gerekli izin
+      contents: write      # Permission needed to commit and push known_rooms.txt back to the repository
 
     steps:
-      - name: Repoyu Klonla
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Python Kurulumu
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: Playwright ve Kütüphaneleri Yükle
+      - name: Install Playwright and Dependencies
         run: |
           python -m pip install --upgrade pip
           pip install playwright
           playwright install chromium
 
-      - name: Botu Çalıştır
+      - name: Run Bot
         env:
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
           SENDER_PASSWORD: ${{ secrets.SENDER_PASSWORD }}
           RECEIVER_EMAIL: ${{ secrets.RECEIVER_EMAIL }}
         run: python main.py
 
-      - name: Hafızayı GitHub'a Kaydet (Commit)
+      - name: Commit and Push State to GitHub
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add known_rooms.txt
-          git commit -m "Hafiza guncellendi (Yeni odalar)" || echo "Degisiklik yok"
+          git commit -m "Update known rooms state" || echo "No changes to commit"
           git push

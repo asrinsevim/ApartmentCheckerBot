@@ -1,7 +1,5 @@
 0/ 004 - Single, balcony - Inner courtyard - 27.23 - 520.50
-0/ 006 - Single, balcony - Inner courtyard - 27.23 - 520.50
 0/ 007 - Single, balcony - Inner courtyard - 27.23 - 520.50
-0/ 008 - Single, balcony - Inner courtyard - 27.29 - 520.50
 0/ 040 - Single, balcony - Inner courtyard - 25.07 - 500.50
 1/ 102 - Single, balcony - Inner courtyard - 27.2 - 520.50
 1/ 103 - Single, balcony - Inner courtyard - 27.2 - 520.50
@@ -20,7 +18,6 @@
 2/ 208 - Single, balcony - Inner courtyard - 27.28 - 520.50
 2/ 213 - Single, balcony - Inner courtyard - 25.82 - 505.50
 2/ 218 - Single, balcony - Wilhelmstraße - 27.1 - 520.50
-2/ 221 - Single, balcony - Wilhelmstraße - 27.22 - 520.50
 2/ 222 - Single, balcony - Wilhelmstraße - 27.22 - 520.50
 2/ 223 - Single, balcony - Wilhelmstraße - 27.28 - 520.50
 2/ 227 - Single, balcony, barrier-free - Wilhelmstraße - 31.13 - 520.50

@@ -13,7 +13,6 @@
 3/ 309 - Single, balcony - Inner courtyard - 27.17 - 520.50
 3/ 318 - Single, balcony - Wilhelmstraße - 27.09 - 520.50
 3/ 325 - Single, balcony - Wilhelmstraße - 27.21 - 520.50
-3/ 346 - Single, balcony - Südstraße - 25.05 - 500.50
 3/ 348 - Single, balcony - Südstraße - 25.20 - 500.50
 4/ 408 - Single, balcony - Inner courtyard - 27.28 - 520.50
 4/ 409 - Single, balcony - Inner courtyard - 27.19 - 520.50
